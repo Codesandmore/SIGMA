@@ -1,17 +1,6 @@
-/**
-* Template Name: TheEvent
-* Updated: Feb 06 2024 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 (function() {
   "use strict";
-
-  /**
-   * Easy selector helper function
-   */
   const select = (el, all = false) => {
     el = el.trim()
     if (all) {

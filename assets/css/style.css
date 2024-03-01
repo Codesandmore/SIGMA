@@ -1,10 +1,19 @@
-/**
-* Template Name: TheEvent
-* Updated: Feb 06 2024 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+@font-face {
+  font-family: rfc;
+  src: url('../Fonts/rcf/Rfc.otf');
+}
+
+
+:root{
+  --clr-primary: rgba(6, 12, 34);
+  --clr-primary-800:rgba(6, 12, 34, 0.800);
+  --clr-secondary:rgb(179, 0, 0);
+  --clr-secondary-hover:rgb(205, 0, 0);
+
+  --font-primary: "Raleway";
+  --font-secondary: "Jetbrains Mono"
+
+}
 
 /*--------------------------------------------------------------
 # General
@@ -12,11 +21,11 @@
 body {
   background: #fff;
   color: #2f3138;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-secondary), sans-serif;
 }
 
 a {
-  color: #f82249;
+  color: var(--clr-secondary);
   text-decoration: none;
   transition: 0.5s;
 }
@@ -40,11 +49,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-primary), sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
-  color: #0e1b4d;
+  color: var(--clr-primary);
 }
 
 .main-page {
@@ -73,7 +82,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #f82249;
+  background: var(--clr-secondary);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -110,7 +119,7 @@ h6 {
   display: block;
   width: 60px;
   height: 5px;
-  background: #f82249;
+  background: var(--clr-secondary);
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -151,21 +160,21 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner {
-  background: rgba(6, 12, 34, 0.98);
+  background: var(--clr-primary);
   height: 70px;
 }
 
 #header #logo h1 {
   font-size: 36px;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-primary), sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
 
 #header #logo h1 span {
-  color: #f82249;
+  color: var(--clr-secondary);
 }
 
 #header #logo h1 a,
@@ -190,11 +199,11 @@ h6 {
 --------------------------------------------------------------*/
 .buy-tickets {
   color: #fff;
-  background: #f82249;
+  background: var(--clr-secondary);
   padding: 7px 22px;
   margin: 0 0 0 15px;
   border-radius: 50px;
-  border: 2px solid #f82249;
+  border: 2px solid var(--clr-secondary);
   transition: all ease-in-out 0.3s;
   font-weight: 500;
   line-height: 1;
@@ -250,7 +259,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   color: rgba(202, 206, 221, 0.8);
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-primary), sans-serif;
   font-weight: 600;
   font-size: 14px;
   white-space: nowrap;
@@ -273,7 +282,7 @@ h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #f82249;
+  background-color: var(--clr-secondary);
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -325,7 +334,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #f82249;
+  color: var(--clr-secondary);
 }
 
 .navbar .dropdown:hover>ul {
@@ -430,7 +439,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #f82249;
+  color: var(--clr-secondary);
 }
 
 .navbar-mobile .getstarted,
@@ -465,7 +474,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #f82249;
+  color: var(--clr-secondary);
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -478,7 +487,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.jpg) top center;
+  background: url(../img/bg/ertg.jpg) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -522,14 +531,15 @@ h6 {
 
 #hero h1 {
   color: #fff;
-  font-family: "Raleway", sans-serif;
-  font-size: 56px;
+  font-family: "rfc", sans-serif;
+  font-size: 6.5rem;
+  letter-spacing: .8rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 #hero h1 span {
-  color: #f82249;
+  color: var(--clr-secondary);
 }
 
 @media (max-width: 991px) {
@@ -540,6 +550,7 @@ h6 {
 
 #hero p {
   color: #ebebeb;
+  font-family: var(--font-secondary);
   font-weight: 700;
   font-size: 20px;
 }
@@ -553,7 +564,7 @@ h6 {
 #hero .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#f82249 50%, rgba(101, 111, 150, 0.15) 52%);
+  background: radial-gradient(var(--clr-secondary) 50%, rgba(101, 111, 150, 0.15) 52%);
   border-radius: 50%;
   display: block;
   position: relative;
@@ -594,7 +605,7 @@ h6 {
 }
 
 #hero .play-btn:hover::after {
-  border-left: 15px solid #f82249;
+  border-left: 15px solid var(--clr-secondary);
   transform: scale(20);
 }
 
@@ -616,7 +627,7 @@ h6 {
 }
 
 #hero .about-btn {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-primary), sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -628,11 +639,11 @@ h6 {
   margin: 10px;
   color: #fff;
   animation-delay: 0.8s;
-  border: 2px solid #f82249;
+  border: 2px solid var(--clr-secondary);
 }
 
 #hero .about-btn:hover {
-  background: #f82249;
+  background: var(--clr-secondary);
   color: #fff;
 }
 
@@ -749,7 +760,7 @@ h6 {
 }
 
 #speakers .speaker .details a:hover {
-  color: #f82249;
+  color: var(--clr-secondary);
 }
 
 #speakers .speaker:hover .details {
@@ -786,7 +797,7 @@ h6 {
 }
 
 #speakers-details .details .social a:hover {
-  background: #f82249;
+  background: var(--clr-secondary);
   color: #fff;
 }
 
@@ -825,7 +836,7 @@ h6 {
   border: none;
   border-radius: 50px;
   font-weight: 600;
-  background-color: #0e1b4d;
+  background-color: var(--clr-primary);
   color: #fff;
   padding: 10px 100px;
 }
@@ -849,7 +860,7 @@ h6 {
 }
 
 #schedule .nav-tabs a.active {
-  background-color: #f82249;
+  background-color: var(--clr-secondary);
   color: #fff;
 }
 
@@ -1029,7 +1040,7 @@ h6 {
 }
 
 #hotels a:hover {
-  color: #f82249;
+  color: var(--clr-secondary);
 }
 
 #hotels .stars {
@@ -1067,11 +1078,11 @@ h6 {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #f82249;
+  border: 1px solid var(--clr-secondary);
 }
 
 #gallery .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #f82249;
+  background-color: var(--clr-secondary);
 }
 
 #gallery .swiper-slide-active {
@@ -1084,7 +1095,7 @@ h6 {
   }
 
   #gallery .swiper-slide-active {
-    border: 5px solid #f82249;
+    border: 5px solid var(--clr-secondary);
     padding: 4px;
     background: #fff;
     z-index: 1;
@@ -1147,13 +1158,13 @@ h6 {
 #faq .faq-list .question {
   display: block;
   position: relative;
-  font-family: #f82249;
+  font-family: var(--clr-secondary);
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   padding-left: 25px;
   cursor: pointer;
-  color: #e0072f;
+  color: var(--clr-secondary-hover);
   transition: 0.3s;
 }
 
@@ -1178,7 +1189,7 @@ h6 {
 }
 
 #faq .faq-list .collapsed:hover {
-  color: #f82249;
+  color: var(--clr-secondary);
 }
 
 #faq .faq-list .collapsed .icon-show {
@@ -1244,7 +1255,7 @@ h6 {
   border: 0;
   padding: 9px 25px;
   cursor: pointer;
-  background: #f82249;
+  background: var(--clr-secondary);
   color: #fff;
   transition: all 0.3s ease;
   outline: none;
@@ -1253,7 +1264,7 @@ h6 {
 }
 
 #subscribe button:hover {
-  background: #e0072f;
+  background: var(--clr-secondary-hover);
 }
 
 @media (max-width: 460px) {
@@ -1309,13 +1320,13 @@ h6 {
   border-radius: 50px;
   padding: 10px 40px;
   transition: all 0.2s;
-  background-color: #f82249;
+  background-color: var(--clr-secondary);
   border: 0;
   color: #fff;
 }
 
 #buy-tickets .card .btn:hover {
-  background-color: #e0072f;
+  background-color: var(--clr-secondary-hover);
 }
 
 #buy-tickets #buy-ticket-modal input,
@@ -1328,13 +1339,13 @@ h6 {
   border-radius: 50px;
   padding: 10px 40px;
   transition: all 0.2s;
-  background-color: #f82249;
+  background-color: var(--clr-secondary);
   border: 0;
   color: #fff;
 }
 
 #buy-tickets #buy-ticket-modal .btn:hover {
-  background-color: #e0072f;
+  background-color: var(--clr-secondary-hover);
 }
 
 /*--------------------------------------------------------------
@@ -1353,7 +1364,7 @@ h6 {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: #f82249;
+  color: var(--clr-secondary);
 }
 
 #contact .contact-info address,
@@ -1375,7 +1386,7 @@ h6 {
 }
 
 #contact .contact-info a:hover {
-  color: #f82249;
+  color: var(--clr-secondary);
 }
 
 #contact .contact-address,
@@ -1450,7 +1461,7 @@ h6 {
 
 #contact .php-email-form input:focus,
 #contact .php-email-form textarea:focus {
-  border-color: #f82249;
+  border-color: var(--clr-secondary);
 }
 
 #contact .php-email-form input {
@@ -1462,7 +1473,7 @@ h6 {
 }
 
 #contact .php-email-form button[type=submit] {
-  background: #f82249;
+  background: var(--clr-secondary);
   border: 0;
   padding: 10px 40px;
   color: #fff;
@@ -1472,7 +1483,7 @@ h6 {
 }
 
 #contact .php-email-form button[type=submit]:hover {
-  background: #e0072f;
+  background: var(--clr-secondary-hover);
 }
 
 @keyframes animate-loading {
@@ -1489,14 +1500,14 @@ h6 {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #101522;
+  background: var(--clr-primary-800);
   padding: 0 0 25px 0;
   color: #eee;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #040919;
+  background: var(--clr-primary);
   padding: 60px 0 30px 0;
 }
 
@@ -1509,7 +1520,7 @@ h6 {
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-primary), sans-serif;
   font-weight: 700;
   color: #fff;
 }
@@ -1523,7 +1534,7 @@ h6 {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-primary), sans-serif;
   color: #fff;
 }
 
@@ -1548,7 +1559,7 @@ h6 {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #f82249;
+  background: var(--clr-secondary);
   color: #fff;
 }
 
@@ -1559,7 +1570,7 @@ h6 {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
-  border-bottom: 2px solid #f82249;
+  border-bottom: 2px solid var(--clr-secondary);
 }
 
 #footer .footer-top .footer-links {
@@ -1574,7 +1585,7 @@ h6 {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 5px;
-  color: #f82249;
+  color: var(--clr-secondary);
   font-size: 18px;
 }
 
@@ -1592,7 +1603,7 @@ h6 {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #f82249;
+  color: var(--clr-secondary);
 }
 
 #footer .footer-top .footer-contact {
@@ -1614,7 +1625,7 @@ h6 {
 }
 
 #footer .footer-top .footer-newsletter input[type=submit] {
-  background: #f82249;
+  background: var(--clr-secondary);
   border: 0;
   width: 35%;
   padding: 6px 0;
@@ -1625,7 +1636,7 @@ h6 {
 }
 
 #footer .footer-top .footer-newsletter input[type=submit]:hover {
-  background: #e0072f;
+  background: var(--clr-secondary-hover);
 }
 
 #footer .copyright {
