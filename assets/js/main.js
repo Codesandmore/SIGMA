@@ -2,10 +2,10 @@ function rotateAndShowText(x) {
     console.log(x.children);
     const rotatingDiv=x.children[0];
     if (!rotatingDiv.classList.contains('rotated')) {
-        rotatingDiv.children[0].style.display= "none";
+        rotatingDiv.children[0].style.display= "none";//h3
         rotatingDiv.classList.add('rotated');
         setTimeout(function() {
-        x.children[1].style.display = 'block';
+        x.children[1].style.display = 'block';//details
       }, 200); // Adjust the delay time as needed (in milliseconds)
     }
 }
