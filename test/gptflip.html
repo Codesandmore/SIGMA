@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotating Div</title>
+<style>
+    .container {
+        position: relative;
+        width: 200px;
+        height: 200px;
+    }
+    .rotating-div {
+        width: 100%;
+        height: 100%;
+        background-color: #3498db;
+        color: white;
+        text-align: center;
+        line-height: 200px;
+        transition: transform 0.5s;
+    }
+    .rotated {
+        transform: rotateY(180deg);
+    }
+    .div-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="container" onmouseenter="rotateAndShowText()">
+    <div class="rotating-div"></div>
+    <div class="div-content" id="textToDisplay">Text to display</div>
+</div>
+
+<script>
+    let alreadyRotated = false;
+    function rotateAndShowText() {
+        if (!alreadyRotated) {
+            const rotatingDiv = document.querySelector('.rotating-div');
+            const textToDisplay = document.getElementById('textToDisplay');
+            rotatingDiv.classList.add('rotated');
+            textToDisplay.style.display = 'block';
+            alreadyRotated = true;
+        }
+    }
+</script>
+
+</body>
+</html>

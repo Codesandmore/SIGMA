@@ -1,4 +1,14 @@
-
+function rotateAndShowText(x) {
+    console.log(x.children);
+    const rotatingDiv=x.children[0];
+    if (!rotatingDiv.classList.contains('rotated')) {
+        rotatingDiv.children[0].style.display= "none";
+        rotatingDiv.classList.add('rotated');
+        setTimeout(function() {
+        x.children[1].style.display = 'block';
+      }, 200); // Adjust the delay time as needed (in milliseconds)
+    }
+}
 (function() {
   "use strict";
   const select = (el, all = false) => {
@@ -218,5 +228,5 @@
       mirror: false
     })
   });
-
+  
 })()
