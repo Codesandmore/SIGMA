@@ -1,26 +1,26 @@
-function rotateAndShowText(x) {
-  console.log(x.children);
-  const rotatingDiv = x.children[0];
-  if (!rotatingDiv.classList.contains("rotated")) {
-    rotatingDiv.children[0].style.display = "none"; //h3
-    rotatingDiv.classList.add("rotated");
-    setTimeout(function () {
-      x.children[1].style.display = "block"; //details
-    }, 10); // Adjust the delay time as needed (in milliseconds)
-  }
-}
+// function rotateAndShowText(x) {
+//   console.log(x.children);
+//   const rotatingDiv = x.children[0];
+//   if (!rotatingDiv.classList.contains("rotated")) {
+//     rotatingDiv.children[0].style.display = "none"; //h3
+//     rotatingDiv.classList.add("rotated");
+//     setTimeout(function () {
+//       x.children[1].style.display = "block"; //details
+//     }, 10); // Adjust the delay time as needed (in milliseconds)
+//   }
+// }
 
-function rotateAndRemoveText(x) {
-  console.log(x.children);
-  const rotatingDiv = x.children[0];
-  if (rotatingDiv.classList.contains("rotated")) {
-    x.children[1].style.display = "none";
-    rotatingDiv.classList.remove("rotated");
-    setTimeout(function () {
-      rotatingDiv.children[0].style.display = "block";
-    }, 10);
-  }
-}
+// function rotateAndRemoveText(x) {
+//   console.log(x.children);
+//   const rotatingDiv = x.children[0];
+//   if (rotatingDiv.classList.contains("rotated")) {
+//     x.children[1].style.display = "none";
+//     rotatingDiv.classList.remove("rotated");
+//     setTimeout(function () {
+//       rotatingDiv.children[0].style.display = "block";
+//     }, 10);
+//   }
+// }
 
 (function () {
   "use strict";
