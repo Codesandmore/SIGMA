@@ -53,15 +53,21 @@
 
         <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
-            <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
-            <li><a class="nav-link scrollto" href="#venue">Venue</a></li>
-            <li><a class="nav-link scrollto" href="#hotels">Hotels</a></li>
-            <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
             <li>
-              <a class="nav-link scrollto" href="#supporters">Sponsors</a>
+              <a class="nav-link mx-2 scrollto active" href="#hero">Home</a>
+            </li>
+            <li><a class="nav-link mx-2 scrollto" href="#about">About</a></li>
+            /
+            <li><a class="nav-link mx-2 scrollto" href="#tracks">Tracks</a></li>
+            <li><a class="nav-link mx-2 scrollto" href="#faq">Faq</a></li>
+
+            <!-- <li><a class="nav-link mx-2 scrollto" href="#speakers">Speakers</a></li> -->
+            <!-- <li><a class="nav-link mx-2 scrollto" href="#schedule">Schedule</a></li> -->
+            <!-- <li><a class="nav-link mx-2 scrollto" href="#venue">Venue</a></li> -->
+            <!-- <li><a class="nav-link mx-2 scrollto" href="#hotels">Hotels</a></li> -->
+            <!-- <li><a class="nav-link mx-2 scrollto" href="#gallery">Gallery</a></li> -->
+            <li>
+              <!-- <a class="nav-link mx-2 scrollto" href="#supporters">Sponsors</a> -->
             </li>
             <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
@@ -80,7 +86,9 @@
             <li><a href="#">Drop Down 4</a></li>
           </ul>
         </li> -->
-            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            <li>
+              <a class="nav-link mx-2 scrollto" href="#contact">Contact</a>
+            </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -99,9 +107,9 @@
         <div class="hero-img">
           <img src="assets/img/sigmabl.png" alt="" title="" />
         </div>
-        <h1 class="mb-4 pb-0">SIGMA</h1>
-        <span class="mb-4 pb-0">#FromWavesToWonders</span>
-        <p class="mb-4 pb-0">23-24 March 2024</p>
+        <h1 class="pb-0">SIGMA</h1>
+        <span class="pb-0">#FromWavesToWonders</span>
+        <p class="pb-0">23-24 March 2024</p>
         <a href="#buy-tickets" class="about-btn scrollto">Register Now</a>
       </div>
     </section>
@@ -138,7 +146,7 @@
       <!-- End About Section -->
 
       <!-- ======= Speakers Section ======= -->
-      <section id="speakers">
+      <!-- <section id="speakers">
         <div class="container" data-aos="fade-up">
           <div class="section-header">
             <h2>Event Speakers</h2>
@@ -262,7 +270,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- End Speakers Section -->
 
       <!-- ======= Tracks Section ======= -->
@@ -275,52 +283,91 @@
 
           <div class="track-row">
             <!--class="col-lg-4 col-md-6"-->
-            <div class="track" onmouseenter="rotateAndShowText(this)">
+            <div
+              class="track"
+              onmouseenter="rotateAndShowText(this)"
+              onmouseleave="rotateAndRemoveText(this)"
+            >
               <!-- <img
                   src="assets/img/speakers/1.jpg"
                   alt="Speaker 1"
                   class="img-fluid"
                 /> -->
-              <div class="rotating-div"><h3>Track1</h3></div>
+              <div class="rotating-div">
+                <div>
+                  <h3>AI CHATBOTS</h3>
+                </div>
+              </div>
 
               <div class="details">
-                <p>Quas alias incidunt</p>
+                <p>
+                  Talk Session 1: AI Chatbots - Explore AI-powered chatbots with
+                  industry experts.
+                </p>
               </div>
             </div>
-            <div class="track" onmouseenter="rotateAndShowText(this)">
+            <div
+              class="track"
+              onmouseenter="rotateAndShowText(this)"
+              onmouseleave="rotateAndRemoveText(this)"
+            >
               <!-- <img
                   src="assets/img/speakers/1.jpg"
                   alt="Speaker 1"
                   class="img-fluid"
                 /> -->
-              <div class="rotating-div"><h3>Track2</h3></div>
+              <div class="rotating-div">
+                <h3>SIGNAL PROCESSING FOR IOT SYSTEMS</h3>
+              </div>
 
               <div class="details">
-                <p>Quas alias incidunt</p>
+                <p>
+                  Talk Session 2: Signal Processing for IoT Systems - Discover
+                  the role of signal processing in IoT systems.
+                </p>
               </div>
             </div>
-            <div class="track" onmouseenter="rotateAndShowText(this)">
+            <div
+              class="track"
+              onmouseenter="rotateAndShowText(this)"
+              onmouseleave="rotateAndRemoveText(this)"
+            >
               <!-- <img
                   src="assets/img/speakers/1.jpg"
                   alt="Speaker 1"
                   class="img-fluid"
                 /> -->
-              <div class="rotating-div"><h3>Track3</h3></div>
+              <div class="rotating-div">
+                <h3>Brain-Computer Interfaces (BCIs)</h3>
+              </div>
 
               <div class="details">
-                <p>Quas alias incidunt</p>
+                <p>
+                  Track 1: Exploring Brain-Computer Interfaces (BCIs) - Learn
+                  about BCIs and their applications from scholars.
+                </p>
               </div>
             </div>
-            <div class="track" onmouseenter="rotateAndShowText(this)">
+            <div
+              class="track"
+              onmouseenter="rotateAndShowText(this)"
+              onmouseleave="rotateAndRemoveText(this)"
+            >
               <!-- <img
                   src="assets/img/speakers/1.jpg"
                   alt="Speaker 1"
                   class="img-fluid"
                 /> -->
-              <div class="rotating-div"><h3>Track4</h3></div>
+              <div class="rotating-div">
+                <h3>Virtual Reality and Augmented Reality (AR/VR)</h3>
+              </div>
 
               <div class="details">
-                <p>Quas alias incidunt</p>
+                <p>
+                  Track 2: Virtual Reality and Augmented Reality (AR/VR) in
+                  Signal Processing - Experience the creative applications of
+                  AR/VR in signal processing.
+                </p>
               </div>
             </div>
           </div>
@@ -329,7 +376,7 @@
       <!-- End Tracks Section -->
 
       <!-- ======= Schedule Section ======= -->
-      <section id="schedule" class="section-with-bg">
+      <!-- <section id="schedule" class="section-with-bg">
         <div class="container" data-aos="fade-up">
           <div class="section-header">
             <h2>Event Schedule</h2>
@@ -374,7 +421,6 @@
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <!-- Schdule Day 1 -->
             <div
               role="tabpanel"
               class="col-lg-9 tab-pane fade show active"
@@ -486,9 +532,7 @@
                 </div>
               </div>
             </div>
-            <!-- End Schdule Day 1 -->
 
-            <!-- Schdule Day 2 -->
             <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-2">
               <div class="row schedule-item">
                 <div class="col-md-2"><time>10:00 AM</time></div>
@@ -588,9 +632,7 @@
                 </div>
               </div>
             </div>
-            <!-- End Schdule Day 2 -->
 
-            <!-- Schdule Day 3 -->
             <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-3">
               <div class="row schedule-item">
                 <div class="col-md-2"><time>10:00 AM</time></div>
@@ -690,14 +732,13 @@
                 </div>
               </div>
             </div>
-            <!-- End Schdule Day 2 -->
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- End Schedule Section -->
 
       <!-- ======= Venue Section ======= -->
-      <section id="venue">
+      <!-- <section id="venue">
         <div class="container-fluid" data-aos="fade-up">
           <div class="section-header">
             <h2>Event Venue</h2>
@@ -865,11 +906,11 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- End Venue Section -->
 
       <!-- ======= Hotels Section ======= -->
-      <section id="hotels" class="section-with-bg">
+      <!-- <section id="hotels" class="section-with-bg">
         <div class="container" data-aos="fade-up">
           <div class="section-header">
             <h2>Hotels</h2>
@@ -940,11 +981,11 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- End Hotels Section -->
 
       <!-- ======= Gallery Section ======= -->
-      <section id="gallery">
+      <!-- <section id="gallery">
         <div class="container" data-aos="fade-up">
           <div class="section-header">
             <h2>Gallery</h2>
@@ -997,11 +1038,11 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
-      </section>
+      </section> -->
       <!-- End Gallery Section -->
 
       <!-- ======= Supporters Section ======= -->
-      <section id="supporters" class="section-with-bg">
+      <!-- <section id="supporters" class="section-with-bg">
         <div class="container" data-aos="fade-up">
           <div class="section-header">
             <h2>Sponsors</h2>
@@ -1093,7 +1134,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- End Sponsors Section -->
 
       <!-- =======  F.A.Q Section ======= -->
@@ -1116,16 +1157,15 @@
                     class="collapsed question"
                     href="#faq1"
                   >
-                    Non consectetur a erat nam at lectus urna duis?
+                    What do the different ticketing prices mean?
                     <i class="bi bi-chevron-down icon-show"></i
                     ><i class="bi bi-chevron-up icon-close"></i>
                   </div>
                   <div id="faq1" class="collapse" data-bs-parent=".faq-list">
                     <p>
-                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna
-                      id volutpat lacus laoreet non curabitur gravida. Venenatis
-                      lectus magna fringilla urna porttitor rhoncus dolor purus
-                      non.
+                      The varied ticket charges for IEEE SPS members, IEEE
+                      members, and non-IEEE members at the event reflect the
+                      differential access to exclusive benefits.
                     </p>
                   </div>
                 </li>
@@ -1136,19 +1176,12 @@
                     href="#faq2"
                     class="collapsed question"
                   >
-                    Feugiat scelerisque varius morbi enim nunc faucibus a
-                    pellentesque? <i class="bi bi-chevron-down icon-show"></i
+                    Are earlybird discounts available?
+                    <i class="bi bi-chevron-down icon-show"></i
                     ><i class="bi bi-chevron-up icon-close"></i>
                   </div>
                   <div id="faq2" class="collapse" data-bs-parent=".faq-list">
-                    <p>
-                      Dolor sit amet consectetur adipiscing elit pellentesque
-                      habitant morbi. Id interdum velit laoreet id donec
-                      ultrices. Fringilla phasellus faucibus scelerisque
-                      eleifend donec pretium. Est pellentesque elit ullamcorper
-                      dignissim. Mauris ultrices eros in cursus turpis massa
-                      tincidunt dui.
-                    </p>
+                    <p>Early bird discounts are unavailable</p>
                   </div>
                 </li>
 
@@ -1158,18 +1191,14 @@
                     href="#faq3"
                     class="collapsed question"
                   >
-                    Dolor sit amet consectetur adipiscing elit pellentesque
-                    habitant morbi? <i class="bi bi-chevron-down icon-show"></i
+                    Where can I review my registration information?
+                    <i class="bi bi-chevron-down icon-show"></i
                     ><i class="bi bi-chevron-up icon-close"></i>
                   </div>
                   <div id="faq3" class="collapse" data-bs-parent=".faq-list">
                     <p>
-                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices
-                      sagittis orci. Faucibus pulvinar elementum integer enim.
-                      Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
-                      tellus pellentesque eu tincidunt. Lectus urna duis
-                      convallis convallis tellus. Urna molestie at elementum eu
-                      facilisis sed odio morbi quis
+                      An email in regard to your registration will be sent to
+                      the email address that you have used for registration
                     </p>
                   </div>
                 </li>
@@ -1180,19 +1209,12 @@
                     href="#faq4"
                     class="collapsed question"
                   >
-                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                    Can I register and buy a ticket at the event?
                     <i class="bi bi-chevron-down icon-show"></i
                     ><i class="bi bi-chevron-up icon-close"></i>
                   </div>
                   <div id="faq4" class="collapse" data-bs-parent=".faq-list">
-                    <p>
-                      Dolor sit amet consectetur adipiscing elit pellentesque
-                      habitant morbi. Id interdum velit laoreet id donec
-                      ultrices. Fringilla phasellus faucibus scelerisque
-                      eleifend donec pretium. Est pellentesque elit ullamcorper
-                      dignissim. Mauris ultrices eros in cursus turpis massa
-                      tincidunt dui.
-                    </p>
+                    <p>Spot registrations are not available</p>
                   </div>
                 </li>
 
@@ -1202,17 +1224,15 @@
                     href="#faq5"
                     class="collapsed question"
                   >
-                    Tempus quam pellentesque nec nam aliquam sem et tortor
-                    consequat? <i class="bi bi-chevron-down icon-show"></i
+                    Is there preferred accommodation I can book?
+                    <i class="bi bi-chevron-down icon-show"></i
                     ><i class="bi bi-chevron-up icon-close"></i>
                   </div>
                   <div id="faq5" class="collapse" data-bs-parent=".faq-list">
                     <p>
-                      Molestie a iaculis at erat pellentesque adipiscing
-                      commodo. Dignissim suspendisse in est ante in. Nunc vel
-                      risus commodo viverra maecenas accumsan. Sit amet nisl
-                      suscipit adipiscing bibendum est. Purus gravida quis
-                      blandit turpis cursus in
+                      Accommodation is arranged at pre-booked hotels, and if
+                      there requires any personal arrangements, you can let us
+                      know.
                     </p>
                   </div>
                 </li>
@@ -1223,21 +1243,13 @@
                     href="#faq6"
                     class="collapsed question"
                   >
-                    Tortor vitae purus faucibus ornare. Varius vel pharetra vel
-                    turpis nunc eget lorem dolor?
+                    I booked at the preferred hotel. Are there any shuttles
+                    organized to transport me to the event?
                     <i class="bi bi-chevron-down icon-show"></i
                     ><i class="bi bi-chevron-up icon-close"></i>
                   </div>
                   <div id="faq6" class="collapse" data-bs-parent=".faq-list">
-                    <p>
-                      Laoreet sit amet cursus sit amet dictum sit amet justo.
-                      Mauris vitae ultricies leo integer malesuada nunc vel.
-                      Tincidunt eget nullam non nisi est sit amet. Turpis nunc
-                      eget lorem dolor sed. Ut venenatis tellus in metus
-                      vulputate eu scelerisque. Pellentesque diam volutpat
-                      commodo sed egestas egestas fringilla phasellus faucibus.
-                      Nibh tellus molestie nunc non blandit massa enim nec.
-                    </p>
+                    <p>Yes!! Your transportation will be our responsibility</p>
                   </div>
                 </li>
               </ul>
@@ -1249,7 +1261,7 @@
 
       <!-- ======= Subscribe Section ======= -->
       <section id="subscribe">
-        <div class="container" data-aos="zoom-in">
+        <!-- <div class="container" data-aos="zoom-in">
           <div class="section-header">
             <h2>Newsletter</h2>
             <p>Rerum numquam illum recusandae quia mollitia consequatur.</p>
@@ -1267,7 +1279,7 @@
               </div>
             </div>
           </form>
-        </div>
+        </div> -->
       </section>
       <!-- End Subscribe Section -->
 
@@ -1276,10 +1288,7 @@
         <div class="container" data-aos="fade-up">
           <div class="section-header">
             <h2>Buy Tickets</h2>
-            <p>
-              Velit consequatur consequatur inventore iste fugit unde omnis eum
-              aut.
-            </p>
+            <p>Book Your Seats Now!!!</p>
           </div>
 
           <div class="row">
@@ -1287,11 +1296,11 @@
               <div class="card mb-5 mb-lg-0">
                 <div class="card-body">
                   <h5 class="card-title text-muted text-uppercase text-center">
-                    Standard Access
+                    IEEE SPS MEMBERS
                   </h5>
-                  <h6 class="card-price text-center">$150</h6>
+                  <h6 class="card-price text-center">&#8377;299</h6>
                   <hr />
-                  <ul class="fa-ul">
+                  <!-- <ul class="fa-ul">
                     <li>
                       <span class="fa-li"><i class="fa fa-check"></i></span
                       >Regular Seating
@@ -1316,8 +1325,8 @@
                       <span class="fa-li"><i class="fa fa-times"></i></span
                       >After Party
                     </li>
-                  </ul>
-                  <hr />
+                  </ul> -->
+
                   <div class="text-center">
                     <button
                       type="button"
@@ -1336,11 +1345,11 @@
               <div class="card mb-5 mb-lg-0">
                 <div class="card-body">
                   <h5 class="card-title text-muted text-uppercase text-center">
-                    Pro Access
+                    IEEE MEMBERS
                   </h5>
-                  <h6 class="card-price text-center">$250</h6>
+                  <h6 class="card-price text-center">&#8377;399</h6>
                   <hr />
-                  <ul class="fa-ul">
+                  <!-- <ul class="fa-ul">
                     <li>
                       <span class="fa-li"><i class="fa fa-check"></i></span
                       >Regular Seating
@@ -1365,8 +1374,8 @@
                       <span class="fa-li"><i class="fa fa-times"></i></span
                       >After Party
                     </li>
-                  </ul>
-                  <hr />
+                  </ul> -->
+
                   <div class="text-center">
                     <button
                       type="button"
@@ -1386,11 +1395,11 @@
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title text-muted text-uppercase text-center">
-                    Premium Access
+                    Non-IEEE Members
                   </h5>
-                  <h6 class="card-price text-center">$350</h6>
+                  <h6 class="card-price text-center">&#8377;399</h6>
                   <hr />
-                  <ul class="fa-ul">
+                  <!-- <ul class="fa-ul">
                     <li>
                       <span class="fa-li"><i class="fa fa-check"></i></span
                       >Regular Seating
@@ -1415,8 +1424,8 @@
                       <span class="fa-li"><i class="fa fa-check"></i></span
                       >After Party
                     </li>
-                  </ul>
-                  <hr />
+                  </ul> -->
+
                   <div class="text-center">
                     <button
                       type="button"
@@ -1504,7 +1513,10 @@
               <div class="contact-address">
                 <i class="bi bi-geo-alt"></i>
                 <h3>Address</h3>
-                <address>A108 Adam Street, NY 535022, USA</address>
+                <address>
+                  Mar Athanasius College Of Engineering College Junction, Road,
+                  Kothamangalam, Kerala 686666
+                </address>
               </div>
             </div>
 
@@ -1512,7 +1524,10 @@
               <div class="contact-phone">
                 <i class="bi bi-phone"></i>
                 <h3>Phone Number</h3>
-                <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+                <p>Anu Anil : <a href="tel:+916238531731">+91 6238531731</a></p>
+                <p>
+                  Oliviya Jain : <a href="tel:+919895235183"> +91 9895235183</a>
+                </p>
               </div>
             </div>
 

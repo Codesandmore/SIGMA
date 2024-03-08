@@ -5,13 +5,13 @@
 
 
 :root{
-  --clr-primary: rgba(6, 12, 34);
-  --clr-primary-800:rgba(6, 12, 34, 0.800);
-  --clr-secondary:rgb(179, 0, 0);
-  --clr-secondary-hover:rgb(205, 0, 0);
+  --clr-primary: hsl(229, 67%, 15%);
+  --clr-primary-800:hsl(225, 82%, 23%);
+  --clr-secondary:hsl(347, 77%, 57%);
+  --clr-secondary-hover:hsl(347, 61%, 46%);
 
   --font-primary: "Raleway";
-  --font-secondary: "Jetbrains Mono"
+  --font-secondary: "Poppins"
 
 }
 
@@ -692,7 +692,7 @@ h6 {
 # About Section
 --------------------------------------------------------------*/
 #about {
-  background: url("../img/about-bg.jpg");
+  background: url("../img/bg/ertg.jpg");
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -874,11 +874,11 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to bottom right, #122a74,#0D1742 );
+  background-image: linear-gradient(to bottom right, var(--clr-primary),var(--clr-primary-800) );
   color: white;
   text-align: center;
   /* line-height: 200px; */
-  transition: transform 0.5s;
+  transition: transform 400ms ease-in-out;
 }
 .rotated {
   transform: rotateY(180deg);
@@ -1378,7 +1378,7 @@ h6 {
 --------------------------------------------------------------*/
 #subscribe {
   padding: 60px;
-  background: url(../img/subscribe-bg.jpg) center center no-repeat;
+  background: url(../img/bg/star.png) center center no-repeat;
   background-size: cover;
   overflow: hidden;
   position: relative;
