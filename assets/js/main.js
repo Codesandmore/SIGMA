@@ -256,3 +256,37 @@
     });
   });
 })();
+
+$(document).ready(function() {
+  // Initialize the carousel
+  $('#event-carousel').carousel();
+
+  // Pause carousel on hover
+  $('#event-carousel').hover(function() {
+    $(this).carousel('pause');
+  }, function() {
+    $(this).carousel('cycle');
+  });
+
+  // Automatically move the carousel every 5 seconds
+  setInterval(function() {
+    $('#event-carousel').carousel('next');
+  }, 5000);
+
+  // Slider component functionality
+  $('.slider-component').click(function() {
+    var slideIndex = parseInt($(this).data('slide'));
+    $('#event-carousel').carousel(slideIndex);
+  });
+
+  // Update slider component on carousel slide change
+  $('#event-carousel').on('slide.bs.carousel', function(event) {
+    var activeSlideIndex = $(event.relatedTarget).index();
+    $('.slider-component').removeClass('active');
+    $('.slider-component[data-slide="' + activeSlideIndex + '"]').addClass('active');
+  });
+});
+
+
+
+
