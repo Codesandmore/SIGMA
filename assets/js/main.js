@@ -6,7 +6,7 @@ function rotateAndShowText(x) {
     rotatingDiv.classList.add("rotated");
     setTimeout(function () {
       x.children[1].style.display = "block"; //details
-    }, 350); // Adjust the delay time as needed (in milliseconds)
+    }, 10); // Adjust the delay time as needed (in milliseconds)
   }
 }
 
@@ -18,7 +18,7 @@ function rotateAndRemoveText(x) {
     rotatingDiv.classList.remove("rotated");
     setTimeout(function () {
       rotatingDiv.children[0].style.display = "block";
-    }, 350);
+    }, 10);
   }
 }
 
