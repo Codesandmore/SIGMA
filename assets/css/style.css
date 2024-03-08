@@ -857,11 +857,11 @@ h6 {
   /* margin-bottom: 30px; */
 }
 #tracks .track:hover .rotating-div .track-name{  
-    visibility: hidden;
+    display: none;
+    /* visibility: hidden;
     opacity: 0;
-    /* display: none; */
     transition: visibility 0s, opacity 0s linear;
-    transition-delay: 300ms;
+    transition-delay: 300ms; */
 }
  #tracks .track:hover .rotating-div{
     transform: rotateY(180deg);
