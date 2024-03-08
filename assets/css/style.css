@@ -562,13 +562,18 @@ h6 {
   text-transform: uppercase;
 }
 
-#hero h1 span {
+#hero span {
   color: var(--clr-secondary);
+  font-family: "rfc", sans-serif;
+  font-size: 2rem;
 }
 
 @media (max-width: 991px) {
   #hero h1 {
     font-size: 34px;
+  }
+  #hero span{
+    font-size: 1.2rem;
   }
 }
 
