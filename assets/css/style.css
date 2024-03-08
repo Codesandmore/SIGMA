@@ -857,13 +857,21 @@ h6 {
   /* margin-bottom: 30px; */
 }
 #tracks .track:hover .rotating-div .track-name{  
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    /* display: none; */
+    transition: visibility 0s, opacity 0s linear;
+    transition-delay: 300ms;
 }
  #tracks .track:hover .rotating-div{
     transform: rotateY(180deg);
 }
 #tracks .track:hover .details{
   visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0s linear;
+  transition-delay: 200ms;
+  
 }
 
 #tracks .track-row{
@@ -892,11 +900,16 @@ h6 {
 .rotated {
   transform: rotateY(180deg);
 }
-.rotating-div h3{
+.rotating-div .track-name{
   color: #fff;
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 5px;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0s ease-in;
+  transition-delay: 300ms;
+  /* transition-delay: 200ms; */
   /* padding: 35%; */
 
 }
@@ -910,6 +923,7 @@ h6 {
   width: 100%;
   height: 100%;
   visibility: hidden;
+  opacity: 0;
   padding: 20%;
   /* bottom: -40px; */
   /*right: 0;
