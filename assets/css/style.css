@@ -539,7 +539,7 @@ h6 {
 }
 
 .hero-img img {
-  width: 40%;
+  width: 70%;
   height: auto;
 }
 @media (max-width: 991px) {
@@ -925,6 +925,12 @@ h6 {
   visibility: hidden;
   opacity: 0;
   padding: 20%;
+  display: none;
+  padding: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   /* bottom: -40px; */
   /*right: 0;
   text-align: center;
