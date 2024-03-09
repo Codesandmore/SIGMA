@@ -1015,11 +1015,11 @@ h6 {
   margin-bottom: 10px;
 }
 /*--------------------------------------------------------------
-# Tracks Section
+# Events Section
 --------------------------------------------------------------*/
 .slider {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -1027,12 +1027,12 @@ h6 {
 .slider-component {
   width: 20px;
   height: 5px;
-  background-color: #ddd;
+  background-color: var(--clr-secondary);
   cursor: pointer;
 }
 
 .slider-component.active {
-  background-color: #007bff;
+  background-color: var(--clr-primary);
 }
 
 .carousel-inner {
@@ -1046,7 +1046,18 @@ h6 {
 .carousel-inner .carousel-item.active {
   display: block;
 }
-
+.carousel-inner .carousel-item.active .img-fluid{
+  width: 90%;
+  height:90%;
+}
+.carousel-inner .carousel-item.active h3{
+  font-weight: 600;
+}
+@media (max-width: 991px) {
+  .carousel-inner .carousel-item.active .img-fluid{
+    margin-left: 5%;
+  }
+}
 /*--------------------------------------------------------------
 # Schedule Section
 --------------------------------------------------------------*/

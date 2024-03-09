@@ -276,7 +276,7 @@ $(document).ready(function () {
   // Automatically move the carousel every 5 seconds
   setInterval(function () {
     $("#event-carousel").carousel("next");
-  }, 5000);
+  }, 4000);
 
   // Slider component functionality
   $(".slider-component").click(function () {
