@@ -1646,6 +1646,7 @@
               action="https://docs.google.com/spreadsheets/d/1TOcNsYl4SL_WnIcxkWnDW_YIXdvqDrrsc6UivETs92Y/edit?usp=drive_link"
               method="post"
               role="form"
+              name="contact-form"
               class="php-email-form"
             >
               <div class="row">
@@ -1663,7 +1664,7 @@
                   <input
                     type="Email"
                     class="form-control"
-                    name="email"
+                    name="Email"
                     id="email"
                     placeholder="Your Email"
                     required
@@ -1689,17 +1690,25 @@
                   required
                 ></textarea>
               </div>
-              <div class="my-3">
+              <div
+                id="error"
+                class="err bg-danger pt-3 text-center rounded border border-white"
+              >
+                <h4 class="text-white">Failed to sent Message. Try again</h4>
+              </div>
+              <div id="load" class="my-3">
                 <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  Your message has been sent. Thank you!
-                </div>
               </div>
               <div class="text-center">
                 <button type="submit">Send Message</button>
               </div>
             </form>
+          </div>
+          <div
+            id="success"
+            class="success bg-success p-4 text-center rounded border border-white"
+          >
+            <h4 class="text-white">Your message has been sent successfully</h4>
           </div>
         </div>
       </section>
@@ -1789,7 +1798,7 @@
                   href="https://twitter.com/ieeemace"
                   target="”_blank”"
                   class="twitter"
-                  ><i class="bi bi-twitter"></i
+                  ><i class="bi bi-twitter-x"></i
                 ></a>
                 <a
                   href="https://www.facebook.com/ieeemace/"

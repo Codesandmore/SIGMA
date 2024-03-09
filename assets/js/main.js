@@ -22,6 +22,8 @@
 //   }
 // }
 
+//main function
+
 (function () {
   "use strict";
   const select = (el, all = false) => {
@@ -257,36 +259,59 @@
   });
 })();
 
-$(document).ready(function() {
+$(document).ready(function () {
   // Initialize the carousel
-  $('#event-carousel').carousel();
+  $("#event-carousel").carousel();
 
   // Pause carousel on hover
-  $('#event-carousel').hover(function() {
-    $(this).carousel('pause');
-  }, function() {
-    $(this).carousel('cycle');
-  });
+  $("#event-carousel").hover(
+    function () {
+      $(this).carousel("pause");
+    },
+    function () {
+      $(this).carousel("cycle");
+    }
+  );
 
   // Automatically move the carousel every 5 seconds
-  setInterval(function() {
-    $('#event-carousel').carousel('next');
+  setInterval(function () {
+    $("#event-carousel").carousel("next");
   }, 5000);
 
   // Slider component functionality
-  $('.slider-component').click(function() {
-    var slideIndex = parseInt($(this).data('slide'));
-    $('#event-carousel').carousel(slideIndex);
+  $(".slider-component").click(function () {
+    var slideIndex = parseInt($(this).data("slide"));
+    $("#event-carousel").carousel(slideIndex);
   });
 
   // Update slider component on carousel slide change
-  $('#event-carousel').on('slide.bs.carousel', function(event) {
+  $("#event-carousel").on("slide.bs.carousel", function (event) {
     var activeSlideIndex = $(event.relatedTarget).index();
-    $('.slider-component').removeClass('active');
-    $('.slider-component[data-slide="' + activeSlideIndex + '"]').addClass('active');
+    $(".slider-component").removeClass("active");
+    $('.slider-component[data-slide="' + activeSlideIndex + '"]').addClass(
+      "active"
+    );
   });
 });
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbzoXeODa8U7_bOAMzn0vauChLgrMIUgmHfjs9YmHo8w4EYSWebFZsWheOPS2AkxeDusTA/exec";
+const form = document.forms["contact-form"];
+const msg = document.getElementById("success");
+const er = document.getElementById("error");
+const load = document.getElementById("load");
 
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-
-
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      console.log("Success!", response);
+      form.style.display = "none";
+      msg.style.display = "block";
+    })
+    .catch((error) => {
+      console.error("Error!", error.message);
+      load.style.display = "none";
+      er.style.display = "block";
+    });
+});
