@@ -1066,6 +1066,14 @@ h6 {
     align-items: center;
   }
 }
+@media (max-width: 992px) {
+  .carousel-inner .carousel-item.active h3 {
+    margin-top: 25px;
+  }
+}
+#events a{
+  color: var(--clr-primary);
+}
 
 /*--------------------------------------------------------------
 # Schedule Section
