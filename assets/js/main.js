@@ -260,10 +260,8 @@
 })();
 
 $(document).ready(function () {
-  // Initialize the carousel
   $("#event-carousel").carousel();
 
-  // Pause carousel on hover
   $("#event-carousel").hover(
     function () {
       $(this).carousel("pause");
@@ -273,18 +271,15 @@ $(document).ready(function () {
     }
   );
 
-  // Automatically move the carousel every 5 seconds
   setInterval(function () {
     $("#event-carousel").carousel("next");
   }, 4000);
 
-  // Slider component functionality
   $(".slider-component").click(function () {
     var slideIndex = parseInt($(this).data("slide"));
     $("#event-carousel").carousel(slideIndex);
   });
 
-  // Update slider component on carousel slide change
   $("#event-carousel").on("slide.bs.carousel", function (event) {
     var activeSlideIndex = $(event.relatedTarget).index();
     $(".slider-component").removeClass("active");
@@ -293,6 +288,8 @@ $(document).ready(function () {
     );
   });
 });
+
+
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbzoXeODa8U7_bOAMzn0vauChLgrMIUgmHfjs9YmHo8w4EYSWebFZsWheOPS2AkxeDusTA/exec";
 const form = document.forms["contact-form"];
