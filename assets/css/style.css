@@ -1015,11 +1015,11 @@ h6 {
   margin-bottom: 10px;
 }
 /*--------------------------------------------------------------
-# Tracks Section
+# Events Section
 --------------------------------------------------------------*/
 .slider {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -1027,12 +1027,13 @@ h6 {
 .slider-component {
   width: 20px;
   height: 5px;
-  background-color: #ddd;
+  background-color: var(--clr-secondary);
   cursor: pointer;
+  margin: 0 5px; 
 }
 
 .slider-component.active {
-  background-color: #007bff;
+  background-color: var(--clr-primary);
 }
 
 .carousel-inner {
@@ -1045,6 +1046,33 @@ h6 {
 
 .carousel-inner .carousel-item.active {
   display: block;
+}
+
+.carousel-inner .carousel-item.active .img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-inner .carousel-item.active h3 {
+  font-weight: 600;
+}
+.carousel-inner .carousel-item.active h4 {
+  font-weight: 600;
+}
+
+@media (min-width: 992px) {
+  .carousel-inner .carousel-item .row {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 992px) {
+  .carousel-inner .carousel-item.active h3 {
+    margin-top: 25px;
+  }
+}
+#events a{
+  color: var(--clr-primary);
 }
 
 /*--------------------------------------------------------------
