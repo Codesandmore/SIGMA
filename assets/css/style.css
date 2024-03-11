@@ -1441,11 +1441,15 @@ h6 {
 # Subscribe Section
 --------------------------------------------------------------*/
 #subscribe {
-  padding: 60px;
+  padding: 100px;
   background: url(../img/bg/star.png) center center no-repeat;
   background-size: cover;
   overflow: hidden;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 #subscribe:before {
@@ -1463,6 +1467,29 @@ h6 {
     background-attachment: fixed;
   }
 }
+
+
+/* timer */
+.timer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding-top: 6rem;
+}
+
+.timer div {
+  font-weight: 700;
+  color: white;
+}
+
+.timer .timer-span {
+  margin: 0 10px 0 0;
+  font-weight: 300;
+  color: white;
+}
+
 
 #subscribe .section-header h2,
 #subscribe p {
