@@ -307,7 +307,7 @@ $(document).ready(function () {
 
   setInterval(function () {
     $("#event-carousel").carousel("next");
-  }, 5000);
+  }, 4000);
 
   $(".slider-component").click(function () {
     var slideIndex = parseInt($(this).data("slide"));
