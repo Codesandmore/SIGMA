@@ -850,9 +850,17 @@ h6 {
 #postp {
   padding: 60px 0 30px 0;
 }
-#postp p{
-  padding-top: 250px;
+#postp .resch-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
 }
+#postp p{
+  /* padding-top: 250px; */
+  text-align: center;
+}
+
 #tracks {
   padding: 60px 0 30px 0;
 }
