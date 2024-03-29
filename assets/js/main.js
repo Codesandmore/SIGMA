@@ -23,7 +23,7 @@
 // }
 
 // Set the date to countdown to (YYYY-MM-DD format)
-const countdownDate = new Date("2024-03-23").getTime();
+const countdownDate = new Date("2024-04-13").getTime();
 
 // Update the countdown every 1 second
 const timer = setInterval(function() {
