@@ -861,6 +861,10 @@ h6 {
   text-align: center;
 }
 
+#postp a{
+  color: var(--clr-primary);
+}
+
 #tracks {
   padding: 60px 0 30px 0;
 }
