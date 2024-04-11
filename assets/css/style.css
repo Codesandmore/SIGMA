@@ -1092,7 +1092,12 @@ h6 {
 #events a{
   color: var(--clr-primary);
 }
-
+#events{
+  padding-bottom: 20px;
+}
+#events .section-header{
+  padding-top: 20px;
+}
 /*--------------------------------------------------------------
 # Schedule Section
 --------------------------------------------------------------*/
