@@ -1092,7 +1092,29 @@ h6 {
 #events a{
   color: var(--clr-primary);
 }
-
+#events{
+  padding-bottom: 20px;
+}
+#events .section-header{
+  padding-top: 20px;
+}
+#events .eventtext{
+  padding-top: 25%;
+}
+#events .eventtext h3{
+ font-weight: 600;
+}
+#events .eventimg{
+  padding-top: 5%;
+}
+@media (max-width: 992px) {
+  #events .eventtext{
+    padding-top: 8%;
+  }
+  #events .eventimg{
+    padding-top: 2%;
+  }
+}
 /*--------------------------------------------------------------
 # Schedule Section
 --------------------------------------------------------------*/
